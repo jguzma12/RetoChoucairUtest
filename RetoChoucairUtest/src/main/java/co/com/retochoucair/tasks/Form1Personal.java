@@ -10,8 +10,6 @@ import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import java.util.List;
-
 import static co.com.retochoucair.userinterfaces.Step1Page.*;
 
 public class Form1Personal implements Task {
@@ -37,7 +35,7 @@ private PersonalData personalData;
 
     }
 
-    public static Form1Personal form1Personal(PersonalData personalData) {
+    public static Form1Personal with(PersonalData personalData) {
         return Tasks.instrumented(Form1Personal.class, personalData);
     }
 }
