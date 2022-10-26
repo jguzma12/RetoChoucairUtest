@@ -27,10 +27,6 @@ dependencies {
     implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '3.1.1'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '3.0.5'
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.0.5'
-    testImplementation 'junit:junit:4.12'
-
-
-
-
+    testImplementation 'junit:junit:4.13.2'
 
 }
