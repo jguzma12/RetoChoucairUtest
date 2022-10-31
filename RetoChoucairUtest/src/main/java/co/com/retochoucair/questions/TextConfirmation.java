@@ -3,10 +3,12 @@ package co.com.retochoucair.questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class TextConfirmation implements Question {
+import static co.com.retochoucair.userinterfaces.MainPage.TXT_CONFIRM;
+
+public class TextConfirmation implements Question<String> {
     @Override
-    public Object answeredBy(Actor actor) {
-        return actor.recall("message");
+    public String answeredBy(Actor actor) {
+        return TXT_CONFIRM.resolveFor(actor).getText();
     }
 
     public static TextConfirmation with() {

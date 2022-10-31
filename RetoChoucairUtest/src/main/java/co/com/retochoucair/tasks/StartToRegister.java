@@ -24,7 +24,7 @@ public class StartToRegister implements Task {
                 Form3TellUs.fill(personalData),
                 Form4LastStep.fill(personalData)
         );
-        actor.remember("message",TXT_CONFIRM.resolveFor(actor).getText());
+
 
     }
 
